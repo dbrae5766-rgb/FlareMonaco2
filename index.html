@@ -7,8 +7,10 @@
   <style type="text/css" media="screen">
     body {
         overflow: hidden;
+        margin: 0;
+        padding: 0;
+        background-color: #272822;
     }
-
     #editor {
         margin: 0;
         position: absolute;
@@ -20,15 +22,12 @@
   </style>
 </head>
 <body>
-
-<pre id="editor">-- Thanks for using Sonar, developed by CG, Ethan, Ad</pre>
-
+<pre id="editor">--Flare Executor</pre>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.32.2/ace.js" type="text/javascript" charset="utf-8"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.32.2/ext-language_tools.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.32.2/ext-language_tools.js" type="text/javascript" charset="utf-8"></script>
 <script>
 ace.require("ace/ext/language_tools");
     var editor = ace.edit("editor");
-
     editor.setTheme("ace/theme/monokai");
     editor.session.setMode("ace/mode/lua");
     editor.setOptions({
@@ -37,6 +36,5 @@ ace.require("ace/ext/language_tools");
         enableLiveAutocompletion: true
     });
 </script>
-
 </body>
 </html>
